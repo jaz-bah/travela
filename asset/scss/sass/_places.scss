@@ -1,0 +1,53 @@
+.section-places{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3{
+        @include heading1;
+
+        text-align: center;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 480px;
+        padding-top: 50px;
+        padding-bottom: 0px;
+
+        .swiper-slide {
+            position: relative;
+            width: 350px;
+            height: 380px;
+            background-color: #fff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 3px;
+
+            .img-box{
+                @include img-box;
+                height: 340px;
+                background-color: black;
+
+                img{
+                    opacity: 80%;
+                    width: 100%;
+                }
+            }
+
+            .text-box{
+                position: absolute;
+                bottom: 10px;
+                left: 20px;
+                h2{
+                    @include heading2;
+                }
+                p{
+                    @include pera;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

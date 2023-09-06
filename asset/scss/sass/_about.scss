@@ -1,0 +1,42 @@
+.section-about{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3{
+        @include heading1;
+    }
+    p{
+        @include pera;
+    }
+    button{
+        @include button;
+
+        box-shadow: var(--shadow-color);
+    }
+    .img-box1{
+        @include img-box;
+        height: 400px;
+        margin-top: 20px;
+
+        img{
+            transition: all 0.8s ease;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+    .img-box2{
+        @include img-box;
+        height: 400px;
+        margin-top: 20px;
+
+        img{
+            transition: all 0.8s ease;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}

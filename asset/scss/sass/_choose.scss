@@ -1,0 +1,83 @@
+.section-choose{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3{
+        @include heading1;
+        text-align: center;
+    }
+
+    .card{
+        width: 100%;
+        position: relative;
+        background-color: var(--div-color);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-shadow: var(--shadow-color);
+        margin-top: 20px;
+
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+        .img-box{
+            @include img-box;
+
+            img{
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .rating{
+            position: absolute;
+            top: 30px;
+            right: 20px;
+
+            h2{
+                @include heading2;
+                font-size: 20px;
+            }
+        }
+        .details{
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+
+            h2{
+                @include heading2;
+            }
+
+            .pera1{
+                @include pera;
+                color: #fff;
+            }
+            .price{
+                @include pera;
+                margin-top: 30px;
+                color: #fff;
+            }
+        }
+        button{
+            @include button;
+            position: absolute;
+            right: 20px;
+            bottom: 30px;
+
+            i{
+                margin-left: 0px;
+            }
+
+            &:hover{
+                background-color: var(--button-color-lighter);
+        
+                i{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}

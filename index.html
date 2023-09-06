@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travela</title>
+
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="asset/image/favicon.png" type="image/x-icon">
+    
+    <!--Bootstrap_CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Google_fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
+    <!--Swiper-Css-->
+    <link rel="stylesheet" href="asset/css/swiper.min.css">
+
+    <!--animate-css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--My_CSS-->
+    <link rel="stylesheet" href="asset/scss/main.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+
+</head>
+<body>
+    <!--head-start-->
+    <div class="section-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Travela.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Hotels</a>
+                    </li>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <!--head-end-->
+
+    <!--body-start-->
+        <div class="section-slider">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
+
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <div id="slide-section1" class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="asset/image/bali.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>Islands</h3>
+                          <h1>Bali</h1>
+                          <p>
+                            It is an Indonesian island known and <br>
+                            beautiful for its lush active volcanic <br>
+                            mountains.
+                          </p>
+                          <button>Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="asset/image/borabora.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>Islands</h3>
+                          <h1>Bora Bora</h1>
+                          <p>
+                            Small South Pacific island northwest of <br>
+                            Tahiti in French Polynesia, surrounded <br>
+                            by motus.
+                          </p>
+                          <button>Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="asset/image/palawan.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>Islands</h3>
+                          <h1>Palawan</h1>
+                          <p>
+                            Also known as La Paragua, it is the <br> 
+                            largest island in the province of <br>
+                            Palawan.
+                          </p>
+                          <button>Explore <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="section-about">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3 class="heading1">
+                  More Information <br>
+                  About The Best Beaches
+                </h3>
+                <p>
+                  You can find the most beautiful and pleasant places at the best <br>
+                  prices with special discounts, you choose the place we will guide <br>
+                  you all the way to wait, get your place now.
+                </p>
+                <button>Reserve a place <i class="fas fa-arrow-right"></i></button>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="img-box1 opacity0">
+                  <img src="asset/image/about1.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="img-box2 opacity0">
+                  <img src="asset/image/about2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-places">
+          <div class="container">
+            <h3>
+              Discover The Most <br>
+              Attractive Places
+            </h3>
+
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="img-box">
+                        <img src="asset/image/place1.jpg" alt="">
+                      </div>
+                      <div class="text-box">
+                        <h2>Bali</h2>
+                        <p>32 tours available</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="asset/image/place2.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                      <h2>Hawaii</h2>
+                      <p>15 tours available</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="asset/image/place3.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                      <h2>Havar</h2>
+                      <p>13 tours available</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="asset/image/place4.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                      <h2>Whitehaven</h2>
+                      <p>24 tours available</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="asset/image/place5.jpg" alt="">
+                    </div>
+                    <div class="text-box">
+                      <h2>Palawan</h2>
+                      <p>18 tours available</p>
+                    </div>
+                  </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="section-video">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 offset-md-3">
+                <h3>Video Tour</h3>
+                <p>
+                  Find out more with our video of the most beautiful and <br>
+                  pleasant places for you and your family.
+                </p>
+
+                <div class="video-content opacity0">
+                  <video id="video-file">
+                    <source src="asset/image/video.mp4" type="video/mp4">
+                  </video>
+
+                  <button class="button" id="video-button">
+                    <i id="video-icon" class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-experience">
+          <div class="container">
+            <h3>
+              With Our Experience <br>
+              We Will Serve You
+            </h3>
+            <div class="row">
+              <div class="col-4 col-md-2 offset-md-3">
+                <h2>20</h2>
+                <p>Year Experience</p>
+              </div>
+              <div class="col-4 col-md-2">
+                <h2>75</h2>
+                <p>Complete Tours</p>
+              </div>
+              <div class="col-4 col-md-3">
+                <h2>650+</h2>
+                <p>Tourist Destination</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6 offset-md-3">
+                <div class="img-div">
+                  <div class="img-box1">
+                    <img src="asset/image/experience1.jpg" alt="">
+                  </div>
+                  <div class="img-box2">
+                    <img src="asset/image/experience2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-choose">
+          <div class="container">
+            <h3>Choose Your Place</h3>
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <div class="card choice1 opacity0">
+                  <div class="img-box">
+                    <img src="asset/image/place1.jpg" alt="">
+                  </div>
+                  <div class="rating">
+                    <h2><i class="far fa-star"></i>4.8</h2>
+                  </div>
+                  <div class="details">
+                    <h2>Bali</h2>
+                    <p class="pera1">Indonesia</p>
+                    <p class="price">$2499</p>
+                  </div>
+
+                  <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3">
+                <div class="card choice2 opacity0">
+                  <div class="img-box">
+                    <img src="asset/image/place2.jpg" alt="">
+                  </div>
+                  <div class="rating">
+                    <h2><i class="far fa-star"></i>5.0</h2>
+                  </div>
+                  <div class="details">
+                    <h2>Bora Bora</h2>
+                    <p class="pera1">Polinesia</p>
+                    <p class="price">$1599</p>
+                  </div>
+
+                  <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3">
+                <div class="card choice3 opacity0">
+                  <div class="img-box">
+                    <img src="asset/image/place3.jpg" alt="">
+                  </div>
+                  <div class="rating">
+                    <h2><i class="far fa-star"></i>4.9</h2>
+                  </div>
+                  <div class="details">
+                    <h2>Hawaii</h2>
+                    <p class="pera1">EE.UU</p>
+                    <p class="price">$3499</p>
+                  </div>
+
+                  <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3">
+                <div class="card choice4 opacity0">
+                  <div class="img-box">
+                    <img src="asset/image/place4.jpg" alt="">
+                  </div>
+                  <div class="rating">
+                    <h2><i class="far fa-star"></i>4.8</h2>
+                  </div>
+                  <div class="details">
+                    <h2>Whitehaven</h2>
+                    <p class="pera1">Australia</p>
+                    <p class="price">$2499</p>
+                  </div>
+
+                  <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-subscribe">
+          <div class="container">
+            <div class="card">
+              <h2>
+                Subscribe Our <br> 
+                Newsletter
+              </h2>
+              <p>Subscribe to our newsletter and get a special 30% discount.</p>
+
+              <form action="">
+                <input type="text" placeholder="Enter email">
+                <button>Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    <!--body-end-->
+    
+    <!--footer-start-->
+        <div class="section-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <h2 class="logo">Travela.</h2>
+                <p>
+                  Travel you choose the <br>
+                  destination, we offer you the <br>
+                  experience.
+                </p>
+              </div>
+              <div class="col-12 col-md-3">
+                <h2>About</h2>
+                <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">New & Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-3">
+                <h2>Company</h2>
+                <ul>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Plan & Pricing</a></li>
+                  <li><a href="">Become a member</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-3">
+                <h2>Support</h2>
+                <ul>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">Support Center</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-copyright">
+          <p>© ZazBah. All right reserved</p>
+        </div>
+    <!--footer-end-->
+
+
+    <!--Bootstrap_JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--Fontawsome-->
+    <script src="https://kit.fontawesome.com/e6c688e1c2.js" crossorigin="anonymous"></script>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!--Swiper-js-->
+    <script src="asset/js/swiper.min.js"></script>
+    <script src="asset/js/swiper.js"></script>
+
+    <!--Waypoint.js-->
+    <script src="asset/js/jquery.waypoints.min.js"></script>
+    <script src="asset/js/scrool.js"></script>
+
+    <!--My_JavaScript-->
+    <script src="asset/js/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,705 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=El+Messiri:wght@400;500;700&family=Lobster+Two:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+:root {
+  --header-height: 3rem;
+  /*========== Colors ==========*/
+  --first-color-lighter: #707070;
+  --text-color: #000;
+  --text-color-white: #fff;
+  --body-color: #AED6F1;
+  --div-color: #fff;
+  --shadow-color: 1px 2px 7px rgb(179, 179, 179);
+  --button-color: #26A69A;
+  --button-color-lighter: #ECF3F2;
+  /*========== Font and typography ==========*/
+  --logo-font: 'Lobster Two', cursive;
+  --link-font: 'El Messiri', sans-serif;
+  --text-font: 'Poppins', sans-serif;
+  --biggest-font-size: 3rem;
+  --big-font-size: 1.25rem;
+  --normal-font-size: 15px;
+  /*========== Font weight ==========*/
+  --font-medium: 300;
+  --font-semi-bold: 500;
+  --font-bold: 700;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 5.5rem;
+    --big-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*========== mixin ==========*/
+* {
+  cursor: default;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  position: static;
+}
+
+input, button:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.section-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-nav .navbar {
+  border-radius: 3px;
+  background-color: var(--div-color) !important;
+  -webkit-box-shadow: var(--shadow-color);
+          box-shadow: var(--shadow-color);
+}
+
+.section-nav .navbar .navbar-brand {
+  font-family: var(--logo-font);
+  font-size: var(--big-font-size);
+  cursor: pointer;
+}
+
+.section-nav .navbar .nav-link {
+  font-family: var(--link-font);
+  font-size: var(--normal-font-size) !important;
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section-nav .navbar .nav-link:hover {
+  color: var(--first-color-lighter);
+}
+
+.section-slider {
+  padding-bottom: 20px;
+}
+
+.section-slider .carousel {
+  background-color: var(--div-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: var(--shadow-color);
+          box-shadow: var(--shadow-color);
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.section-slider .carousel-item {
+  height: 140px;
+}
+
+.section-slider .carousel-indicators {
+  margin-left: 0px !important;
+  width: 100% !important;
+  padding-left: 60%;
+}
+
+.section-slider .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.section-slider .carousel-caption {
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.section-slider .carousel-caption h3 {
+  font-family: var(--text-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--big-font-size);
+}
+
+.section-slider .carousel-caption h1 {
+  font-family: var(--text-font);
+  font-weight: var(--font-bold);
+  font-size: var(--biggest-font-size);
+}
+
+.section-slider .carousel-caption p {
+  font-family: var(--link-font);
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+}
+
+.section-slider .carousel-caption button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--div-color);
+  color: var(--button-color);
+  border-radius: 3px;
+  font-family: var(--text-font);
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.section-slider .carousel-caption button i {
+  margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.section-slider .carousel-caption button:hover {
+  background-color: var(--button-color-lighter);
+}
+
+.section-slider .carousel-caption button:hover i {
+  margin-left: 20px;
+}
+
+.section-about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-about h3 {
+  font-family: var(--link-font);
+  font-weight: var(--font-bold);
+  color: var(--text-color);
+}
+
+.section-about p {
+  font-family: var(--text-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-lighter);
+}
+
+.section-about button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--div-color);
+  color: var(--button-color);
+  border-radius: 3px;
+  font-family: var(--text-font);
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-box-shadow: var(--shadow-color);
+          box-shadow: var(--shadow-color);
+}
+
+.section-about button i {
+  margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.section-about button:hover {
+  background-color: var(--button-color-lighter);
+}
+
+.section-about button:hover i {
+  margin-left: 20px;
+}
+
+.section-about .img-box1 {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.section-about .img-box1 img {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.section-about .img-box1 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section-about .img-box2 {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.section-about .img-box2 img {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.section-about .img-box2 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section-places {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-places h3 {
+  font-family: var(--link-font);
+  font-weight: var(--font-bold);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.section-places .swiper-container {
+  width: 100%;
+  height: 480px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.section-places .swiper-container .swiper-slide {
+  position: relative;
+  width: 350px;
+  height: 380px;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.section-places .swiper-container .swiper-slide .img-box {
+  width: 100%;
+  overflow: hidden;
+  height: 340px;
+  background-color: black;
+}
+
+.section-places .swiper-container .swiper-slide .img-box img {
+  opacity: 80%;
+  width: 100%;
+}
+
+.section-places .swiper-container .swiper-slide .text-box {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.section-places .swiper-container .swiper-slide .text-box h2 {
+  color: var(--text-color-white);
+  font-style: var(--text-font);
+  font-weight: var(--font-bold);
+}
+
+.section-places .swiper-container .swiper-slide .text-box p {
+  font-family: var(--text-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-lighter);
+  color: #fff;
+}
+
+.section-video {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-video h3 {
+  font-family: var(--link-font);
+  font-weight: var(--font-bold);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.section-video p {
+  font-family: var(--text-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-lighter);
+  text-align: center;
+}
+
+.section-video .video-content {
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: var(--shadow-color);
+          box-shadow: var(--shadow-color);
+  background-color: var(--div-color);
+}
+
+.section-video .video-content video {
+  width: 100%;
+}
+
+.section-video .video-content .button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--div-color);
+  color: var(--button-color);
+  border-radius: 3px;
+  font-family: var(--text-font);
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.section-video .video-content .button i {
+  cursor: pointer;
+}
+
+.section-experience {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-experience h3 {
+  font-family: var(--link-font);
+  font-weight: var(--font-bold);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.section-experience h2 {
+  color: var(--text-color-white);
+  font-style: var(--text-font);
+  font-weight: var(--font-bold);
+  color: #fff;
+}
+
+.section-experience p {
+  font-family: var(--text-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-lighter);
+  font-size: 10px;
+}
+
+.section-experience .img-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.section-experience .img-div .img-box1 {
+  width: 80%;
+  overflow: hidden;
+}
+
+.section-experience .img-div .img-box1 img {
+  width: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.section-experience .img-div .img-box1 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section-experience .img-div .img-box2 {
+  position: absolute;
+  width: 40%;
+  overflow: hidden;
+  right: 0;
+  top: 50px;
+}
+
+.section-experience .img-div .img-box2 img {
+  width: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.section-experience .img-div .img-box2 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section-choose {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-choose h3 {
+  font-family: var(--link-font);
+  font-weight: var(--font-bold);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.section-choose .card {
+  width: 100%;
+  position: relative;
+  background-color: var(--div-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-shadow: var(--shadow-color);
+          box-shadow: var(--shadow-color);
+  margin-top: 20px;
+}
+
+.section-choose .card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section-choose .card .img-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-choose .card .img-box img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-choose .card .rating {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.section-choose .card .rating h2 {
+  color: var(--text-color-white);
+  font-style: var(--text-font);
+  font-weight: var(--font-bold);
+  font-size: 20px;
+}
+
+.section-choose .card .details {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.section-choose .card .details h2 {
+  color: var(--text-color-white);
+  font-style: var(--text-font);
+  font-weight: var(--font-bold);
+}
+
+.section-choose .card .details .pera1 {
+  font-family: var(--text-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-lighter);
+  color: #fff;
+}
+
+.section-choose .card .details .price {
+  font-family: var(--text-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-lighter);
+  margin-top: 30px;
+  color: #fff;
+}
+
+.section-choose .card button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--div-color);
+  color: var(--button-color);
+  border-radius: 3px;
+  font-family: var(--text-font);
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+.section-choose .card button i {
+  margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.section-choose .card button:hover {
+  background-color: var(--button-color-lighter);
+}
+
+.section-choose .card button:hover i {
+  margin-left: 20px;
+}
+
+.section-choose .card button i {
+  margin-left: 0px;
+}
+
+.section-choose .card button:hover {
+  background-color: var(--button-color-lighter);
+}
+
+.section-choose .card button:hover i {
+  margin-left: 0px;
+}
+
+.section-subscribe {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-subscribe .card {
+  width: 100%;
+  background-color: var(--div-color);
+  border-radius: 3px;
+  -webkit-box-shadow: var(--shadow-color);
+          box-shadow: var(--shadow-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-subscribe .card h2 {
+  color: var(--text-color-white);
+  font-style: var(--text-font);
+  font-weight: var(--font-bold);
+  text-align: center;
+  color: #000;
+  padding-bottom: 30px;
+}
+
+.section-subscribe .card p {
+  font-family: var(--text-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-lighter);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.section-subscribe .card form {
+  width: 50%;
+  background-color: var(--body-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 25%;
+}
+
+.section-subscribe .card form input {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  width: 75%;
+  font-size: 25px;
+}
+
+.section-subscribe .card form input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 25px;
+}
+
+.section-subscribe .card form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--div-color);
+  color: var(--button-color);
+  border-radius: 3px;
+  font-family: var(--text-font);
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.section-subscribe .card form button i {
+  margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.section-subscribe .card form button:hover {
+  background-color: var(--button-color-lighter);
+}
+
+.section-subscribe .card form button:hover i {
+  margin-left: 20px;
+}
+
+.section-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-footer .logo {
+  font-family: var(--logo-font);
+}
+
+.section-footer h2 {
+  color: var(--text-color-white);
+  font-style: var(--text-font);
+  font-weight: var(--font-bold);
+}
+
+.section-footer p, .section-footer a {
+  font-family: var(--text-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-lighter);
+}
+
+.section-footer ul {
+  padding-left: 0;
+}
+
+.section-footer ul li a {
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.section-footer ul li a:hover {
+  color: #000;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=main.css.map */

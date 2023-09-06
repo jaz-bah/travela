@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=El+Messiri:wght@400;500;700&family=Lobster+Two:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root{
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    --first-color-lighter: #707070;
+    --text-color: #000;
+    --text-color-white: #fff;
+    --body-color: #AED6F1;
+    --div-color: #fff;
+    --shadow-color: 1px 2px 7px rgb(179, 179, 179);
+    --button-color: #26A69A;
+    --button-color-lighter: #ECF3F2;
+
+    /*========== Font and typography ==========*/
+    --logo-font: 'Lobster Two', cursive;
+    --link-font: 'El Messiri', sans-serif;
+    --text-font: 'Poppins', sans-serif;
+
+    --biggest-font-size: 3rem;
+    --big-font-size: 1.25rem;
+    --normal-font-size: 15px;
+    
+    @media screen and (min-width: 1024px){
+        --biggest-font-size: 5.5rem;
+        --big-font-size: 2rem;
+        --normal-font-size: 1rem;
+    }
+
+    /*========== Font weight ==========*/
+    --font-medium: 300;
+    --font-semi-bold: 500;
+    --font-bold: 700;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+} 
+
+/*========== mixin ==========*/
+@mixin button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--div-color);
+    color: var(--button-color);
+    border-radius: 3px;
+    font-family: var(--text-font);
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+
+    i{
+        margin-left: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    &:hover{
+        background-color: var(--button-color-lighter);
+
+        i{
+            margin-left: 20px;
+        }
+    }
+}
+@mixin heading1 {
+    font-family: var(--link-font);
+    font-weight: var(--font-bold);
+    color: var(--text-color);
+}
+@mixin heading2{
+    color: var(--text-color-white);
+    font-style: var(--text-font);
+    font-weight: var(--font-bold);
+}
+@mixin pera {
+    font-family: var(--text-font);
+    font-size: var(--normal-font-size);
+    color: var(--first-color-lighter);
+}
+@mixin img-box{
+    width: 100%;
+    overflow: hidden;
+}

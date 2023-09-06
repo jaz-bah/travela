@@ -1,0 +1,55 @@
+.section-experience{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3{
+        @include heading1;
+        text-align: center;
+    }
+    h2{
+        @include heading2;
+        color: #fff;
+    }
+    p{
+        @include pera;
+        font-size: 10px;
+    }
+
+    .img-div{
+        width: 100%;
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        position: relative;
+
+        .img-box1{
+            width: 80%;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                transition: 0.3s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .img-box2{
+            position: absolute;
+            width: 40%;
+            overflow: hidden;
+            right: 0;
+            top: 50px;
+
+            img{
+                width: 100%;
+                transition: 0.3s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

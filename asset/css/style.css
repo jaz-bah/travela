@@ -1,0 +1,152 @@
+/*HEAD-S*/
+.opacity0{
+    opacity: 0;
+}
+/*HEAD-E*/
+/*BODY-S*/
+.section-subscribe .card form {
+    width: 90%;
+    margin-left: 5%;
+}
+.section-subscribe .card form input {
+    width: 40%;
+    font-size: 10px;
+}
+.section-subscribe .card form input::-webkit-input-placeholder {
+    font-size: 10px;
+}
+.section-subscribe .card form button {
+    padding: 5px 10px;
+}
+/*BODY-E*/
+/*FOOTER-S*/
+.section-copyright p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.section-places .swiper-container .swiper-slide {
+    width: 250px;
+}
+/*FOOTER-E*/
+
+@media only screen and (min-width: 320px){
+    .section-subscribe .card form input {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 360px){
+    .section-slider .carousel {
+        height: 180px;
+    }
+      
+    .section-slider .carousel-item {
+        height: 140px;
+    }
+    .section-subscribe .card form input {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 375px){
+
+
+}
+
+@media only screen and (min-width: 411px){
+    .section-slider .carousel-indicators {
+        padding-left: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 414px){
+
+
+}
+
+@media only screen and (min-width: 540px){
+
+
+}
+
+@media only screen and (min-width: 768px){
+    .section-slider .carousel {
+        height: 420px;
+    }
+      
+    .section-slider .carousel-item {
+        height: 400px;
+    }
+    .section-slider .carousel-indicators {
+        padding-left: 80%;
+    }
+    .section-about .img-box1 {
+        height: 260px;
+        margin-top: 20px;
+    }
+    .section-about .img-box2 {
+        height: 300px;
+        margin-top: 0px;
+    }
+    .section-subscribe .card form input {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    .section-slider .carousel {
+        height: 440px;
+    }
+    .section-slider .carousel-indicators {
+        padding-left: 85%;
+    }
+    .section-experience p {
+        font-size: 15px;
+    }
+    .section-subscribe .card form {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .section-subscribe .card form input {
+        width: 75%;
+        font-size: 20px;
+    }
+    .section-subscribe .card form input::-webkit-input-placeholder {
+        font-size: 20px;
+    }
+    .section-subscribe .card form button {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .section-slider .carousel-indicators {
+        padding-left: 90%;
+    }
+    .section-about .img-box1 {
+        width: 80%;
+        height: 320px;
+        margin-top: 40px;
+        margin-left: 20%;
+    }
+    .section-about .img-box2 {
+        height: 400px;
+        margin-top: 0px;
+    }
+    .card-place1,.card-place3{
+        width: 80% !important;
+        height: 360px !important;
+        margin-top: 40px !important;
+    }
+    .card-place1{
+        margin-left: 20%;
+    }
+    .card-place1 .img-box{
+        height: 320px !important;
+    }
+    
+}

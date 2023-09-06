@@ -1,0 +1,30 @@
+.section-footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .logo{
+        font-family: var(--logo-font);
+    }
+    h2{
+        @include heading2;
+    }
+    p,a{
+        @include pera;
+    }
+
+    ul{
+        padding-left: 0;
+
+        li{
+            a{
+                cursor: pointer;
+                transition: all 0.3s linear;
+
+                &:hover{
+                    color: #000;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.section-nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .navbar{
+        border-radius: 3px;
+        background-color: var(--div-color) !important;
+        box-shadow: var(--shadow-color);
+
+        .navbar-brand{
+            font-family: var(--logo-font);
+            font-size: var(--big-font-size);
+            cursor: pointer;
+        }
+        .nav-link{
+            font-family: var(--link-font);
+            font-size: var(--normal-font-size) !important;
+            font-weight: var(--font-semi-bold);
+            color: var(--text-color);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .nav-link:hover{
+            color: var(--first-color-lighter);
+        }
+    }
+
+}
